@@ -1,0 +1,7 @@
+# The Atlas marketplace. Atlas reads this repository's main branch: each file in items/ is one item,
+# and removed.yaml lists the items retired for safety.
+format: 1
+name: Atlas marketplace
+description: >-
+  What people made for Atlas: skills, MCP servers, plugins and executors, each reviewed and pinned
+  to the commit that was reviewed.

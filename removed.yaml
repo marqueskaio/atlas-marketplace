@@ -1,0 +1,9 @@
+# Items retired for safety. Atlas refuses to install them, and stops them where they were installed:
+# a plugin is taken away (its data stays), a skill is archived, an MCP server leaves mcp.json. An
+# entry matches by its name, or by its repository, which retires everything that came from it.
+#
+# - name: some-item
+#   repo: owner/name
+#   reason: What it did, in one sentence the user reads.
+#   date: 2026-10-25
+[]

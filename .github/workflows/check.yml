@@ -1,0 +1,42 @@
+name: Check
+
+# Every item read as Atlas reads it: its file by the marketplace's rules, its code fetched at its
+# commit and checked for its kind, and a plugin's Python loaded in a home thrown away after. On a
+# pull request, the items it adds or changes; on main, every item.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v6
+      - name: Atlas, from its main branch
+        run: |
+          git clone --depth 1 https://github.com/marqueskaio/atlas "$RUNNER_TEMP/atlas"
+          uv sync --frozen --directory "$RUNNER_TEMP/atlas"
+      - name: The items to check
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE: ${{ github.base_ref }}
+        run: |
+          if [ "$EVENT" = "pull_request" ]; then
+            git diff --name-only --diff-filter=ACMR "origin/$BASE...HEAD" -- 'items/*.yaml' > "$RUNNER_TEMP/items.txt"
+          else
+            ls items/*.yaml > "$RUNNER_TEMP/items.txt" 2>/dev/null || true
+          fi
+          cat "$RUNNER_TEMP/items.txt"
+      - name: Check them
+        # With no item named, every item is checked; marketplace.yaml and removed.yaml always are.
+        run: |
+          mapfile -t items < "$RUNNER_TEMP/items.txt"
+          uv run --project "$RUNNER_TEMP/atlas" atlas marketplace check --root . --load "${items[@]}"
