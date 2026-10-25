@@ -44,7 +44,9 @@ request here only adds the file that points at it.
   programs, MCP servers and systems it needs.
 - **An MCP server** is any one published on npm, PyPI or a container registry, at an exact version.
 
-Then check your item's file as the CI will, with `atlas marketplace check items/<name>.yaml --load`.
+Atlas can write it with you: type `/write-plugin` in a conversation, or press "Make your own" in
+the app's Marketplace. Then check your item's file as the CI will, with
+`atlas marketplace check items/<name>.yaml --load`.
 
 ## An item's file
 
