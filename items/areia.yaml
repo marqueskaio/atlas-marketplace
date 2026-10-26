@@ -1,0 +1,14 @@
+name: areia
+kind: plugin
+title: Areia
+summary: A warm paper-like light theme for Atlas, in sand and ink colors.
+author: JoaoEquer
+license: MIT
+repo: JoaoEquer/atlas-areia
+sha: 7856d506794f1254ee7915e6595ec05eb76e803d
+path: areia
+version: "1.0.0"
+image: https://raw.githubusercontent.com/JoaoEquer/atlas-areia/7856d506794f1254ee7915e6595ec05eb76e803d/areia/screenshots/chat.png
+screenshots:
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/7856d506794f1254ee7915e6595ec05eb76e803d/areia/screenshots/chat.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/7856d506794f1254ee7915e6595ec05eb76e803d/areia/screenshots/settings.png
