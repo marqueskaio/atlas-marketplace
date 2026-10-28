@@ -1,0 +1,10 @@
+name: cloudflare
+kind: plugin
+title: Cloudflare
+summary: Cloudflare's own plugin. Its MCP server reaches your whole account, and its skills cover Workers, Wrangler, Durable Objects and web performance.
+author: cloudflare
+license: Apache-2.0
+repo: cloudflare/skills
+sha: 49a31e0b3229ccdffe4944be9c61bc7481d1d432
+path: ""
+version: "1.0.2"
