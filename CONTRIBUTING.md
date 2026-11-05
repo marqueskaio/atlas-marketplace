@@ -1,7 +1,9 @@
 # Adding an item
 
-An item enters by a pull request that adds one file, `items/<name>.yaml`, and the maintainer reviews
-it. Being listed is what tells Atlas users an item was read by someone, so these rules keep that true:
+An item enters by a pull request that adds one file, `items/<name>.yaml`, and it is merged on its
+own once the check passes (the `Check` workflow, then `Merge`). A pull request that changes
+anything besides item files waits for the maintainer. Being listed is what tells Atlas users an
+item passed these rules, so they hold every item to them:
 
 1. **Reviewed, then pinned.** `sha` is a whole commit, 40 characters. Atlas installs exactly that
    commit. A new version is a new pull request moving `sha`, and the reviewer reads what changed
@@ -26,7 +28,8 @@ it. Being listed is what tells Atlas users an item was read by someone, so these
 9. **Yours to submit.** The pull request comes from the code's owner or a major contributor to it.
    `author` is that GitHub account; `license` is the code's license.
 10. **Official is the maintainer's word.** Only the maintainer marks an item `tier: official`, for
-    the Atlas team's own.
+    the Atlas team's own, and changes `removed.yaml` and `outside.yaml`; the check refuses a pull
+    request of anyone else that does.
 
 Check the file before opening the pull request, as the CI does:
 

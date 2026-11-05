@@ -1,0 +1,39 @@
+name: Outside
+
+# Each night, every plugin of Claude Code's plugin directory is fetched at the commit it would
+# install from and read as Atlas reads a plugin, none of its code run (`atlas marketplace outside`).
+# What does not work in Atlas, with why, is written to outside.yaml, the only file this commits;
+# Atlas reads it with the marketplace, and such a card says it does not work and does not install.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  outside:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Atlas, from its main branch
+        run: |
+          git clone --depth 1 https://github.com/marqueskaio/atlas "$RUNNER_TEMP/atlas"
+          uv sync --frozen --directory "$RUNNER_TEMP/atlas"
+      - name: Read every plugin of the directory
+        env:
+          ATLAS_HOME: ${{ runner.temp }}/home
+        run: uv run --project "$RUNNER_TEMP/atlas" atlas marketplace outside --out outside.yaml
+      - name: Commit outside.yaml when it changed
+        run: |
+          git add outside.yaml
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -m "What does not work in Atlas, as the nightly check found it"
+          git push

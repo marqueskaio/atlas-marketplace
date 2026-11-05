@@ -2,7 +2,11 @@ name: Check
 
 # Every item read as Atlas reads it: its file by the marketplace's rules, its code fetched at its
 # commit and checked for its kind, and a plugin's Python loaded in a home thrown away after. On a
-# pull request, the items it adds or changes; on main, every item.
+# pull request, the items it adds or changes; on main, every item. It runs with no secret and may
+# only read the repository, since a pull request's plugin code runs here.
+#
+# A pull request of someone other than the owner is also checked against main (`--base`): it may
+# not mark an item official, nor change removed.yaml or outside.yaml, which the owner alone changes.
 
 on:
   pull_request:
@@ -35,8 +39,17 @@ jobs:
             ls items/*.yaml > "$RUNNER_TEMP/items.txt" 2>/dev/null || true
           fi
           cat "$RUNNER_TEMP/items.txt"
+      - name: The marketplace as on main, for a pull request of someone else
+        if: github.event_name == 'pull_request' && github.event.pull_request.user.login != github.repository_owner
+        env:
+          BASE: ${{ github.base_ref }}
+        run: git worktree add "$RUNNER_TEMP/base" "origin/$BASE"
       - name: Check them
         # With no item named, every item is checked; marketplace.yaml and removed.yaml always are.
         run: |
           mapfile -t items < "$RUNNER_TEMP/items.txt"
-          uv run --project "$RUNNER_TEMP/atlas" atlas marketplace check --root . --load "${items[@]}"
+          base=()
+          if [ -d "$RUNNER_TEMP/base" ]; then
+            base=(--base "$RUNNER_TEMP/base")
+          fi
+          uv run --project "$RUNNER_TEMP/atlas" atlas marketplace check --root . --load "${base[@]}" "${items[@]}"

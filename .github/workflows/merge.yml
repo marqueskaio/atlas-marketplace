@@ -1,0 +1,43 @@
+name: Merge
+
+# A pull request enters once its check passed, with no one's review (decided by the owner on
+# 05/11/2026). This runs from main and never checks out the pull request's code: it reads the
+# check's result and the files the pull request changes, and merges only one that changes item
+# files alone (`items/<name>.yaml`), so no pull request can change how it is checked or merged, nor
+# removed.yaml or outside.yaml. Anything else waits for the owner.
+
+on:
+  workflow_run:
+    workflows: [Check]
+    types: [completed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  merge:
+    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge the pull request that passed, when it changes item files alone
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          set -euo pipefail
+          number=$(gh pr list --repo "$REPO" --state open --limit 100 --json number,headRefOid,isDraft \
+            --jq ".[] | select(.headRefOid == \"$HEAD_SHA\" and (.isDraft | not)) | .number" | head -n 1)
+          if [ -z "$number" ]; then
+            echo "No open pull request is at $HEAD_SHA: nothing to merge."
+            exit 0
+          fi
+          others=$(gh pr view "$number" --repo "$REPO" --json files \
+            --jq '[.files[].path | select(test("^items/[a-z0-9-]+\\.yaml$") | not)] | join(", ")')
+          if [ -n "$others" ]; then
+            echo "Pull request #$number changes more than item files ($others): it waits for the owner."
+            exit 0
+          fi
+          # Merged only if its head is still the commit that was checked.
+          gh pr merge "$number" --repo "$REPO" --merge --match-head-commit "$HEAD_SHA"

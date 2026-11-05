@@ -1,8 +1,11 @@
 # Atlas marketplace
 
 What people made for [Atlas](https://github.com/marqueskaio/atlas): skills, MCP servers, plugins and
-executors. Every item entered by a pull request the maintainer reviewed, and installs exactly as it
-was reviewed: its code is pinned to a whole commit, and a new version is a new pull request.
+executors. Every item entered by a pull request that passed the check (its file by the
+marketplace's rules, its code fetched at its commit and loaded as Atlas loads it), and installs
+exactly as it was checked: its code is pinned to a whole commit, and a new version is a new pull
+request. `outside.yaml`, written each night, says which plugins of Claude Code's directory do not
+work in Atlas.
 
 ## Using it
 
