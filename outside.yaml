@@ -4,7 +4,7 @@
     as its item says.
 - name: claude-plugins:amd-skills
   reason: 'claude-plugins:amd-skills cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-p04a7dkd/skills-6916fb371d1cba40757b223cf16b4cd4912b202f/.amd-skills.named/amd-skills,
+    in /tmp/atlas-marketplace-e3j4ok2p/skills-6916fb371d1cba40757b223cf16b4cd4912b202f/.amd-skills.named/amd-skills,
     and nothing a plugin brings.'
 - name: claude-plugins:astronomer-data-agents
   reason: The plugin is named astronomer-data, not astronomer-data-agents as its item
@@ -23,18 +23,10 @@
     marketplace takes source.'
 - name: claude-plugins:circle-skills
   reason: The plugin is named circle, not circle-skills as its item says.
-- name: claude-plugins:clangd-lsp
-  reason: 'claude-plugins:clangd-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-dz4pvy5s/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.clangd-lsp.named/clangd-lsp,
-    and nothing a plugin brings.'
 - name: claude-plugins:convex
   reason: 'claude-plugins:convex cannot be read as a plugin: .claude-plugin/plugin.json:
     experimental.monitors names a file; Atlas reads monitors/monitors.json or the
     array.'
-- name: claude-plugins:csharp-lsp
-  reason: 'claude-plugins:csharp-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-4vnd1a_s/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.csharp-lsp.named/csharp-lsp,
-    and nothing a plugin brings.'
 - name: claude-plugins:dash0
   reason: The plugin is named dash0-agent-plugin, not dash0 as its item says.
 - name: claude-plugins:data
@@ -47,28 +39,12 @@
   reason: 'claude-plugins:databases-on-aws cannot be read as a plugin: hooks/hooks.json:
     Atlas runs command hooks; a hook of type ''prompt'' on PostToolUse is not loaded
     yet. Write it as a command.'
-- name: claude-plugins:gopls-lsp
-  reason: 'claude-plugins:gopls-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-0teemxig/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.gopls-lsp.named/gopls-lsp,
-    and nothing a plugin brings.'
 - name: claude-plugins:hyperframes
   reason: https://codeload.github.com/heygen-com/hyperframes/tar.gz/8d2b6e7bdc1c2c26d1abf64ef075c00a1bb230a2
     weighs more than 64 MiB.
-- name: claude-plugins:jdtls-lsp
-  reason: 'claude-plugins:jdtls-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-el1mje_m/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.jdtls-lsp.named/jdtls-lsp,
-    and nothing a plugin brings.'
-- name: claude-plugins:kotlin-lsp
-  reason: 'claude-plugins:kotlin-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-v_yh521m/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.kotlin-lsp.named/kotlin-lsp,
-    and nothing a plugin brings.'
 - name: claude-plugins:learn-with-coursera
   reason: 'claude-plugins:learn-with-coursera cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-krz3jib5/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
-    and nothing a plugin brings.'
-- name: claude-plugins:lua-lsp
-  reason: 'claude-plugins:lua-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-9sw9yw2l/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.lua-lsp.named/lua-lsp,
+    in /tmp/atlas-marketplace-kehrxq8k/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
     and nothing a plugin brings.'
 - name: claude-plugins:notion
   reason: The plugin is named Notion, not notion as its item says.
@@ -79,28 +55,12 @@
   reason: 'claude-plugins:paypal cannot be read as a plugin: hooks/hooks.json: Atlas
     runs command hooks; a hook of type ''prompt'' on PreToolUse is not loaded yet.
     Write it as a command.'
-- name: claude-plugins:php-lsp
-  reason: 'claude-plugins:php-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-zb8k0o7b/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.php-lsp.named/php-lsp,
-    and nothing a plugin brings.'
 - name: claude-plugins:pydantic-ai
   reason: The plugin is named ai, not pydantic-ai as its item says.
-- name: claude-plugins:pyright-lsp
-  reason: 'claude-plugins:pyright-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-tckzntl8/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.pyright-lsp.named/pyright-lsp,
-    and nothing a plugin brings.'
 - name: claude-plugins:qdrant-skills
   reason: The plugin is named qdrant, not qdrant-skills as its item says.
 - name: claude-plugins:rc
   reason: The plugin is named revenuecat, not rc as its item says.
-- name: claude-plugins:ruby-lsp
-  reason: 'claude-plugins:ruby-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-ueoz0ls2/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.ruby-lsp.named/ruby-lsp,
-    and nothing a plugin brings.'
-- name: claude-plugins:rust-analyzer-lsp
-  reason: 'claude-plugins:rust-analyzer-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-ia_brmwo/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.rust-analyzer-lsp.named/rust-analyzer-lsp,
-    and nothing a plugin brings.'
 - name: claude-plugins:salesforce-development
   reason: 'claude-plugins:salesforce-development cannot be read as a plugin: .claude-plugin/plugin.json:
     hooks: the matcher ''*'' is no pattern: nothing to repeat at position 0'
@@ -117,20 +77,14 @@
   reason: The plugin is named shopify-plugin, not shopify-ai-toolkit as its item says.
 - name: claude-plugins:stackhawk-hawkscan
   reason: The plugin is named hawkscan, not stackhawk-hawkscan as its item says.
-- name: claude-plugins:swift-lsp
-  reason: 'claude-plugins:swift-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-zhwfr92v/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.swift-lsp.named/swift-lsp,
-    and nothing a plugin brings.'
-- name: claude-plugins:typescript-lsp
-  reason: 'claude-plugins:typescript-lsp cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-5x9arfpo/claude-plugins-official-fb370c077e8904ce5a0fbe5c89084f5171863c1f/plugins/.typescript-lsp.named/typescript-lsp,
-    and nothing a plugin brings.'
 - name: claude-plugins:vanta-mcp-plugin
   reason: The plugin is named vanta, not vanta-mcp-plugin as its item says.
 - name: claude-plugins:vibe-prospecting
   reason: The plugin is named vpai, not vibe-prospecting as its item says.
 - name: claude-plugins:vsql-extension-builder
   reason: The plugin is named villagesql, not vsql-extension-builder as its item says.
+- name: claude-plugins:xcode
+  reason: Atlas installs plugins from GitHub only.
 - name: claude-plugins:youdotcom-agent-skills
   reason: The plugin is named you, not youdotcom-agent-skills as its item says.
 - name: claude-plugins:zyte-web-data
