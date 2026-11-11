@@ -4,7 +4,7 @@
     as its item says.
 - name: claude-plugins:amd-skills
   reason: 'claude-plugins:amd-skills cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-_ia2wzs2/skills-6916fb371d1cba40757b223cf16b4cd4912b202f/.amd-skills.named/amd-skills,
+    in /tmp/atlas-marketplace-3n9jieus/skills-6916fb371d1cba40757b223cf16b4cd4912b202f/.amd-skills.named/amd-skills,
     and nothing a plugin brings.'
 - name: claude-plugins:astronomer-data-agents
   reason: The plugin is named astronomer-data, not astronomer-data-agents as its item
@@ -44,7 +44,7 @@
     weighs more than 64 MiB.
 - name: claude-plugins:learn-with-coursera
   reason: 'claude-plugins:learn-with-coursera cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-v29sfaxk/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
+    in /tmp/atlas-marketplace-ow76c9j9/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
     and nothing a plugin brings.'
 - name: claude-plugins:mintlify
   reason: 'claude-plugins:mintlify cannot be read as a plugin: .mcp.json has a server
