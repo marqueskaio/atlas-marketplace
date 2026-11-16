@@ -1,18 +1,16 @@
 name: areia
 kind: plugin
 title: Areia
-summary: A warm paper-like light theme for Atlas, in sand and ink, with two dark companions, Coffee and Graphite.
+summary: A warm paper-like light theme for Atlas, in sand and ink colors.
 author: JoaoEquer
 license: MIT
 repo: JoaoEquer/atlas-areia
-sha: 8827648a7cba07e39ccc54be8737e02d7357bde3
+sha: 589a025a6396b098d4abe0c99bcb31f1afee9039
 path: areia
-version: "1.2.0"
-image: https://raw.githubusercontent.com/JoaoEquer/atlas-areia/8827648a7cba07e39ccc54be8737e02d7357bde3/areia/icon.png
+version: "1.3.0"
+image: https://raw.githubusercontent.com/JoaoEquer/atlas-areia/589a025a6396b098d4abe0c99bcb31f1afee9039/areia/icon.png
 screenshots:
-  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/8827648a7cba07e39ccc54be8737e02d7357bde3/areia/screenshots/chat.png
-  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/8827648a7cba07e39ccc54be8737e02d7357bde3/areia/screenshots/cafe-chat.png
-  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/8827648a7cba07e39ccc54be8737e02d7357bde3/areia/screenshots/grafite-chat.png
-  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/8827648a7cba07e39ccc54be8737e02d7357bde3/areia/screenshots/states.png
-  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/8827648a7cba07e39ccc54be8737e02d7357bde3/areia/screenshots/cafe-states.png
-  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/8827648a7cba07e39ccc54be8737e02d7357bde3/areia/screenshots/cafe-settings.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/589a025a6396b098d4abe0c99bcb31f1afee9039/areia/screenshots/chat.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/589a025a6396b098d4abe0c99bcb31f1afee9039/areia/screenshots/default-light.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/589a025a6396b098d4abe0c99bcb31f1afee9039/areia/screenshots/states.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-areia/589a025a6396b098d4abe0c99bcb31f1afee9039/areia/screenshots/settings.png
