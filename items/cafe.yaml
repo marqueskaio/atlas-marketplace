@@ -1,0 +1,16 @@
+name: cafe
+kind: plugin
+title: Café
+summary: A warm espresso dark theme for Atlas, in espresso and cream colors.
+author: JoaoEquer
+license: MIT
+repo: JoaoEquer/atlas-cafe
+sha: 46ab6761ff6435b6c2702e61e9c53ace63581fc6
+path: cafe
+version: "1.0.0"
+image: https://raw.githubusercontent.com/JoaoEquer/atlas-cafe/46ab6761ff6435b6c2702e61e9c53ace63581fc6/cafe/icon.png
+screenshots:
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-cafe/46ab6761ff6435b6c2702e61e9c53ace63581fc6/cafe/screenshots/chat.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-cafe/46ab6761ff6435b6c2702e61e9c53ace63581fc6/cafe/screenshots/default-dark.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-cafe/46ab6761ff6435b6c2702e61e9c53ace63581fc6/cafe/screenshots/states.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-cafe/46ab6761ff6435b6c2702e61e9c53ace63581fc6/cafe/screenshots/settings.png
