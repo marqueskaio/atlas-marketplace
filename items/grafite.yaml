@@ -1,0 +1,16 @@
+name: grafite
+kind: plugin
+title: Grafite
+summary: A cool graphite dark theme for Atlas, with electric cyan accents.
+author: JoaoEquer
+license: MIT
+repo: JoaoEquer/atlas-grafite
+sha: 14cf506d21ab9ad4a35aadc587cbfbcc68bdb3a3
+path: grafite
+version: "1.0.0"
+image: https://raw.githubusercontent.com/JoaoEquer/atlas-grafite/14cf506d21ab9ad4a35aadc587cbfbcc68bdb3a3/grafite/icon.png
+screenshots:
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-grafite/14cf506d21ab9ad4a35aadc587cbfbcc68bdb3a3/grafite/screenshots/chat.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-grafite/14cf506d21ab9ad4a35aadc587cbfbcc68bdb3a3/grafite/screenshots/default-dark.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-grafite/14cf506d21ab9ad4a35aadc587cbfbcc68bdb3a3/grafite/screenshots/states.png
+  - https://raw.githubusercontent.com/JoaoEquer/atlas-grafite/14cf506d21ab9ad4a35aadc587cbfbcc68bdb3a3/grafite/screenshots/settings.png
