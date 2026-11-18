@@ -40,7 +40,7 @@
     weighs more than 64 MiB.
 - name: claude-plugins:learn-with-coursera
   reason: 'claude-plugins:learn-with-coursera cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-4h05kosh/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
+    in /tmp/atlas-marketplace-6bfnza6c/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
     and nothing a plugin brings.'
 - name: claude-plugins:mintlify
   reason: 'claude-plugins:mintlify cannot be read as a plugin: .mcp.json has a server
