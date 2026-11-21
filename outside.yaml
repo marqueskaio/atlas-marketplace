@@ -9,13 +9,13 @@
   reason: The plugin is named azure-sql-database-container, not azure-sql-developer
     as its item says.
 - name: claude-plugins:carta-cap-table
-  reason: 'hooks/bin/hooks-linux-arm64 is compiled, which no reviewer can read: the
+  reason: 'hooks/bin/hooks-darwin-amd64 is compiled, which no reviewer can read: the
     marketplace takes source.'
 - name: claude-plugins:carta-crm
-  reason: 'hooks/bin/hooks-linux-arm64 is compiled, which no reviewer can read: the
+  reason: 'hooks/bin/hooks-darwin-amd64 is compiled, which no reviewer can read: the
     marketplace takes source.'
 - name: claude-plugins:carta-investors
-  reason: 'hooks/bin/hooks-linux-arm64 is compiled, which no reviewer can read: the
+  reason: 'hooks/bin/hooks-darwin-amd64 is compiled, which no reviewer can read: the
     marketplace takes source.'
 - name: claude-plugins:circle-skills
   reason: The plugin is named circle, not circle-skills as its item says.
@@ -40,7 +40,7 @@
     weighs more than 64 MiB.
 - name: claude-plugins:learn-with-coursera
   reason: 'claude-plugins:learn-with-coursera cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-1uwblg5h/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
+    in /tmp/atlas-marketplace-jsxm8lok/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
     and nothing a plugin brings.'
 - name: claude-plugins:mintlify
   reason: 'claude-plugins:mintlify cannot be read as a plugin: .mcp.json has a server
@@ -70,8 +70,8 @@
 - name: claude-plugins:sap-mdk-server
   reason: The plugin is named mdk-mcp, not sap-mdk-server as its item says.
 - name: claude-plugins:semgrep
-  reason: 'scripts/hook-darwin-arm64 is compiled, which no reviewer can read: the
-    marketplace takes source.'
+  reason: 'scripts/hook-linux-amd64 is compiled, which no reviewer can read: the marketplace
+    takes source.'
 - name: claude-plugins:shopify-ai-toolkit
   reason: The plugin is named shopify-plugin, not shopify-ai-toolkit as its item says.
 - name: claude-plugins:stackhawk-hawkscan
