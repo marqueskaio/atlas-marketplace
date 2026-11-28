@@ -2,6 +2,12 @@
 - name: claude-plugins:42crunch-api-security-testing
   reason: The plugin is named api-security-testing, not 42crunch-api-security-testing
     as its item says.
+- name: claude-plugins:agent-sdk-dev
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:asana
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:astronomer-data-agents
   reason: The plugin is named astronomer-data, not astronomer-data-agents as its item
     says.
@@ -9,20 +15,56 @@
   reason: The plugin is named azure-sql-database-container, not azure-sql-developer
     as its item says.
 - name: claude-plugins:carta-cap-table
-  reason: 'hooks/bin/hooks-darwin-amd64 is compiled, which no reviewer can read: the
-    marketplace takes source.'
+  reason: 'hooks/bin/hooks-windows-amd64.exe is compiled, which no reviewer can read:
+    the marketplace takes source.'
 - name: claude-plugins:carta-crm
-  reason: 'hooks/bin/hooks-darwin-amd64 is compiled, which no reviewer can read: the
-    marketplace takes source.'
+  reason: 'hooks/bin/hooks-windows-amd64.exe is compiled, which no reviewer can read:
+    the marketplace takes source.'
 - name: claude-plugins:carta-investors
-  reason: 'hooks/bin/hooks-darwin-amd64 is compiled, which no reviewer can read: the
-    marketplace takes source.'
+  reason: 'hooks/bin/hooks-windows-amd64.exe is compiled, which no reviewer can read:
+    the marketplace takes source.'
+- name: claude-plugins:champion-kit
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:circle-skills
   reason: The plugin is named circle, not circle-skills as its item says.
+- name: claude-plugins:clangd-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:claude-code-setup
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:claude-md-management
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:claude-security
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:code-modernization
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:code-review
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:code-simplifier
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:commit-commands
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:context7
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:convex
   reason: 'claude-plugins:convex cannot be read as a plugin: .claude-plugin/plugin.json:
     experimental.monitors names a file; Atlas reads monitors/monitors.json or the
     array.'
+- name: claude-plugins:csharp-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:cwc-makers
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:dash0
   reason: The plugin is named dash0-agent-plugin, not dash0 as its item says.
 - name: claude-plugins:data
@@ -35,13 +77,76 @@
   reason: 'claude-plugins:databases-on-aws cannot be read as a plugin: hooks/hooks.json:
     Atlas runs command hooks; a hook of type ''prompt'' on PostToolUse is not loaded
     yet. Write it as a command.'
+- name: claude-plugins:discord
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:explanatory-output-style
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:fakechat
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:feature-dev
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:firebase
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:frontend-design
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:github
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:gitlab
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:gopls-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:hookify
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:hyperframes
   reason: https://codeload.github.com/heygen-com/hyperframes/tar.gz/8d2b6e7bdc1c2c26d1abf64ef075c00a1bb230a2
     weighs more than 64 MiB.
+- name: claude-plugins:imessage
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:jdtls-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:kotlin-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:laravel-boost
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:learn-with-coursera
   reason: 'claude-plugins:learn-with-coursera cannot be read as a plugin: No .claude-plugin/plugin.json
-    in /tmp/atlas-marketplace-o6htdnec/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
+    in /tmp/atlas-marketplace-afkel6mg/skills-ac28fd6ebf8584e3ee196159bd6d4514fa07de0f/.learn-with-coursera.named/learn-with-coursera,
     and nothing a plugin brings.'
+- name: claude-plugins:learning-output-style
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:linear
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:lua-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:math-olympiad
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:math-proof
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:mcp-server-dev
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:mcp-tunnels
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:mintlify
   reason: 'claude-plugins:mintlify cannot be read as a plugin: .mcp.json has a server
     named ''Mintlify Search''; use letters, digits, dots, dashes and underscores.'
@@ -54,12 +159,45 @@
   reason: 'claude-plugins:paypal cannot be read as a plugin: hooks/hooks.json: Atlas
     runs command hooks; a hook of type ''prompt'' on PreToolUse is not loaded yet.
     Write it as a command.'
+- name: claude-plugins:php-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:playground
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:playwright
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:plugin-dev
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:pr-review-toolkit
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:project-artifact
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:pydantic-ai
   reason: The plugin is named ai, not pydantic-ai as its item says.
+- name: claude-plugins:pyright-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:qdrant-skills
   reason: The plugin is named qdrant, not qdrant-skills as its item says.
+- name: claude-plugins:ralph-loop
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:rc
   reason: The plugin is named revenuecat, not rc as its item says.
+- name: claude-plugins:receipts
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:ruby-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:rust-analyzer-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:salesforce-development
   reason: 'claude-plugins:salesforce-development cannot be read as a plugin: .claude-plugin/plugin.json:
     hooks: the matcher ''*'' is no pattern: nothing to repeat at position 0'
@@ -69,16 +207,40 @@
   reason: The plugin is named hana-cli, not sap-hana-cli as its item says.
 - name: claude-plugins:sap-mdk-server
   reason: The plugin is named mdk-mcp, not sap-mdk-server as its item says.
+- name: claude-plugins:security-guidance
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:semgrep
   reason: 'scripts/hook-linux-amd64 is compiled, which no reviewer can read: the marketplace
     takes source.'
+- name: claude-plugins:serena
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:session-report
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:shopify-ai-toolkit
   reason: The plugin is named shopify-plugin, not shopify-ai-toolkit as its item says.
+- name: claude-plugins:skill-creator
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:stackhawk-hawkscan
   reason: The plugin is named hawkscan, not stackhawk-hawkscan as its item says.
+- name: claude-plugins:swift-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:telegram
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:terraform
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:theme-examples
-  reason: 'claude-plugins:theme-examples cannot be read as a plugin: hooks/hooks.json
-    must hold its events under "hooks", as Claude Code reads it.'
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
+- name: claude-plugins:typescript-lsp
+  reason: https://api.github.com/repos/anthropics/claude-plugins-official/commits/HEAD
+    answered HTTP 403.
 - name: claude-plugins:vanta-mcp-plugin
   reason: The plugin is named vanta, not vanta-mcp-plugin as its item says.
 - name: claude-plugins:vibe-prospecting
